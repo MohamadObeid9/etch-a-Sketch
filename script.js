@@ -5,6 +5,17 @@ for (let i = 0; i < 16; i++) {
         const element =  document.createElement("div");
         element.style.cssText="padding:10px;background:blue;margin:1px;";
         container.appendChild(element);
+        document.body.addEventListener('mouseover', e => {
+            let div = e.target.closest('div');
+            if (!div) { return; }
+            div.style.backgroundColor = 'red';
+          });
+
+          document.body.addEventListener('mouseout', e => {
+            let div = e.target.closest('div');
+            if (!div) { return; }
+            div.style.backgroundColor = 'red';
+          });
     }
 }
 
