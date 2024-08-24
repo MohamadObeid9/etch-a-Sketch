@@ -68,8 +68,7 @@ footer.appendChild(footerLink);
 
 //CLEAR BUTTON
 
-/* when the clear button clicked , we reset the whole grid elements background color to blue
-and when we hover over the divs there background color become red */
+//we reset the whole grid to the initial form
 button_clear.addEventListener("click", () => {
   container.textContent = "";
   container.style.cssText =
@@ -143,6 +142,8 @@ button_colorfull.addEventListener("click", () => {
 });
 
 //NEW GAME BUTTON
+
+//we ask the user for a random number , from which we generate a new grid
 
 button_new_game.addEventListener("click", () => {
   const userChoice = Number(prompt("choose a number between 1 and 100"));
