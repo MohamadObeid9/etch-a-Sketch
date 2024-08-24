@@ -25,6 +25,7 @@ h1 {
 }
 button {
   margin: 5px;
+  text-transform: capitalize;
   font-family: "Exo 2", sans-serif;
   font-size: 1em;
   padding: 8px 30px;
@@ -34,6 +35,13 @@ button {
 h2 {
   position: absolute;
   bottom: 5px;
+}
+div:hover,
+button:hover {
+  cursor: pointer;
+}
+button:hover {
+  background-color: rgb(235, 49, 194);
 }
 a {
   text-decoration: none;
